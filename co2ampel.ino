@@ -4,7 +4,7 @@
 #include <LiquidCrystal_I2C.h>              // http://librarymanager/All#LiquidCrystal_I2C
 
 #define LED_PIN    D7
-#define LED_COUNT  64
+#define LED_COUNT  10
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 uint32_t red = strip.Color(255, 0, 0);
@@ -81,7 +81,7 @@ void printLEDStrip(uint16_t co2) {
     } else {
       color = green;
     }
-    uint16_t mappedCO2 = map(co2, 300, 2000, 0, 64);
+    uint16_t mappedCO2 = map(co2, 0, 1500, 0, LED_COUNT);
     strip.clear();
     strip.fill(color, 0, mappedCO2);
     strip.show();
