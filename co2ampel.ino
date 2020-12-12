@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <Adafruit_NeoPixel.h>              // http://librarymanager/All#Adafruit_NeoPixel
 #include <SparkFun_SCD30_Arduino_Library.h> // http://librarymanager/All#SparkFun_SCD30
-#include <LiquidCrystal_I2C.h>              // http://librarymanager/All#Liquid  Built in By Adafruit
+#include <LiquidCrystal_I2C.h>              // http://librarymanager/All#LiquidCrystal_I2C by Frank de Brabander
 
 #define LED_PIN    D7
 #define LED_COUNT  10
